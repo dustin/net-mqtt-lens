@@ -13,14 +13,14 @@ packages:
     git: https://github.com/dustin/mqtt-hs.git
     pantry-tree:
       size: 923
-      sha256: ab78eadf3c814ff101a767c608a3d71483f956b237ac43551c6689dffd97226f
-    commit: c193cfa50112100cbc65330238eebee21527c891
+      sha256: 206f60f83e88ba2e5ad84362e019c08f9964dba9a2e215c36fcc107e4ad4a4c2
+    commit: 9e02744795f5b1983eef12a6a27cbc5fedd93146
   original:
     git: https://github.com/dustin/mqtt-hs.git
-    commit: c193cfa50112100cbc65330238eebee21527c891
+    commit: 9e02744795f5b1983eef12a6a27cbc5fedd93146
 snapshots:
 - completed:
-    size: 494638
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/15/11.yaml
-    sha256: 5747328cdcbb8fe9c96fc048b5566167c80dd176a41b52d3b363058e3cc1dc5d
-  original: lts-15.11
+    size: 493124
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/15/10.yaml
+    sha256: 48bc6d1d59224a5166265ef6cdda6a512f29ecc8ef7331826312b82377e89507
+  original: lts-15.10

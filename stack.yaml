@@ -41,7 +41,7 @@ packages:
 #
 extra-deps:
 - git: https://github.com/dustin/mqtt-hs.git
-  commit: c193cfa50112100cbc65330238eebee21527c891
+  commit: 9e02744795f5b1983eef12a6a27cbc5fedd93146
 
 # Override default flag values for local packages and extra-deps
 # flags: {}

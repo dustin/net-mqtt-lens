@@ -3,14 +3,13 @@
 module Network.MQTT.Lens where
 
 import           Control.Lens
-import           Data.Word          (Word16)
 import           Network.MQTT.Types
 
 class HasProperties c where
   properties :: Lens' c [Property]
 
 class HasPktID c where
-  pktID :: Lens' c Word16
+  pktID :: Lens' c PktID
 
 makeLenses ''ConnectRequest
 instance HasProperties ConnectRequest where properties = connProperties
