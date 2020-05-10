@@ -12,6 +12,8 @@
 module Network.MQTT.Lens
 class HasProperties c
 properties :: HasProperties c => Lens' c [Property]
+class HasPktID c
+pktID :: HasPktID c => Lens' c Word16
 username :: Lens' ConnectRequest (Maybe ByteString)
 password :: Lens' ConnectRequest (Maybe ByteString)
 lastWill :: Lens' ConnectRequest (Maybe LastWill)
@@ -163,13 +165,22 @@ instance Network.MQTT.Lens.HasProperties Network.MQTT.Types.AuthRequest
 instance Network.MQTT.Lens.HasProperties Network.MQTT.Types.ConnACKFlags
 instance Network.MQTT.Lens.HasProperties Network.MQTT.Types.DisconnectRequest
 instance Network.MQTT.Lens.HasProperties Network.MQTT.Types.PubACK
+instance Network.MQTT.Lens.HasPktID Network.MQTT.Types.PubACK
 instance Network.MQTT.Lens.HasProperties Network.MQTT.Types.PubCOMP
+instance Network.MQTT.Lens.HasPktID Network.MQTT.Types.PubCOMP
 instance Network.MQTT.Lens.HasProperties Network.MQTT.Types.PubREC
+instance Network.MQTT.Lens.HasPktID Network.MQTT.Types.PubREC
 instance Network.MQTT.Lens.HasProperties Network.MQTT.Types.PubREL
+instance Network.MQTT.Lens.HasPktID Network.MQTT.Types.PubREL
 instance Network.MQTT.Lens.HasProperties Network.MQTT.Types.SubscribeRequest
+instance Network.MQTT.Lens.HasPktID Network.MQTT.Types.SubscribeRequest
 instance Network.MQTT.Lens.HasProperties Network.MQTT.Types.SubscribeResponse
+instance Network.MQTT.Lens.HasPktID Network.MQTT.Types.SubscribeResponse
 instance Network.MQTT.Lens.HasProperties Network.MQTT.Types.UnsubscribeRequest
+instance Network.MQTT.Lens.HasPktID Network.MQTT.Types.UnsubscribeRequest
 instance Network.MQTT.Lens.HasProperties Network.MQTT.Types.UnsubscribeResponse
+instance Network.MQTT.Lens.HasPktID Network.MQTT.Types.UnsubscribeResponse
 instance Network.MQTT.Lens.HasProperties Network.MQTT.Types.PublishRequest
+instance Network.MQTT.Lens.HasPktID Network.MQTT.Types.PublishRequest
 instance Network.MQTT.Lens.HasProperties Network.MQTT.Types.LastWill
 instance Network.MQTT.Lens.HasProperties Network.MQTT.Types.ConnectRequest
