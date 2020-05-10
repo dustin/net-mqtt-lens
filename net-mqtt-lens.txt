@@ -13,7 +13,7 @@ module Network.MQTT.Lens
 class HasProperties c
 properties :: HasProperties c => Lens' c [Property]
 class HasPktID c
-pktID :: HasPktID c => Lens' c Word16
+pktID :: HasPktID c => Lens' c PktID
 username :: Lens' ConnectRequest (Maybe ByteString)
 password :: Lens' ConnectRequest (Maybe ByteString)
 lastWill :: Lens' ConnectRequest (Maybe LastWill)
@@ -30,7 +30,7 @@ pubTopic :: Lens' PublishRequest ByteString
 pubRetain :: Lens' PublishRequest Bool
 pubQoS :: Lens' PublishRequest QoS
 pubProps :: Lens' PublishRequest [Property]
-pubPktID :: Lens' PublishRequest Word16
+pubPktID :: Lens' PublishRequest PktID
 pubDup :: Lens' PublishRequest Bool
 pubBody :: Lens' PublishRequest ByteString
 subQoS :: Lens' SubOptions QoS
