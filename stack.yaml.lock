@@ -5,19 +5,12 @@
 
 packages:
 - completed:
-    cabal-file:
-      size: 4131
-      sha256: c43c2d20c1ddb44f5ac09709ecb9dafb6795d182d1adce8b412bf94e960f4fb6
-    name: net-mqtt
-    version: 0.7.0.0
-    git: https://github.com/dustin/mqtt-hs.git
+    hackage: net-mqtt-0.7.0.0@sha256:c43c2d20c1ddb44f5ac09709ecb9dafb6795d182d1adce8b412bf94e960f4fb6,4131
     pantry-tree:
-      size: 923
-      sha256: 206f60f83e88ba2e5ad84362e019c08f9964dba9a2e215c36fcc107e4ad4a4c2
-    commit: 9e02744795f5b1983eef12a6a27cbc5fedd93146
+      size: 700
+      sha256: 8601cfcc3e3a62bc5cda5de97de8362bab12bf857f5a4d177749cfbffdc809b2
   original:
-    git: https://github.com/dustin/mqtt-hs.git
-    commit: 9e02744795f5b1983eef12a6a27cbc5fedd93146
+    hackage: net-mqtt-0.7.0.0
 snapshots:
 - completed:
     size: 493124
