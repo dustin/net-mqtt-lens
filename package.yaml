@@ -1,5 +1,5 @@
 name:                net-mqtt-lens
-version:             0.1.0.0
+version:             0.1.1.0
 github:              "dustin/net-mqtt-lens"
 license:             BSD3
 author:              "Dustin Sallings"
@@ -22,7 +22,7 @@ description:         Please see the README on GitHub at <https://github.com/dust
 dependencies:
 - base >= 4.7 && < 5
 - lens
-- net-mqtt >= 0.7.0.0 && < 0.8.0.0
+- net-mqtt >= 0.7.0.0 && < 0.9.0.0
 
 library:
   source-dirs: src

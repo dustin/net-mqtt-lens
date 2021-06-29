@@ -4,10 +4,10 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 1eabc983f4d8313cc47210cbb8a8e76f8d2c4c49a0a4f394dd16b95701ed71f3
+-- hash: 7c118a93da15aba56d02817be9ff52f95b5fd3d3ac57320427420b28ac12c9ad
 
 name:           net-mqtt-lens
-version:        0.1.0.0
+version:        0.1.1.0
 synopsis:       Optics for net-mqtt
 description:    Please see the README on GitHub at <https://github.com/dustin/net-mqtt-lens#readme>
 category:       Network
@@ -42,7 +42,7 @@ library
   build-depends:
       base >=4.7 && <5
     , lens
-    , net-mqtt >=0.7.0.0 && <0.8.0.0
+    , net-mqtt >=0.7.0.0 && <0.9.0.0
   default-language: Haskell2010
 
 test-suite net-mqtt-lens-test
@@ -61,7 +61,7 @@ test-suite net-mqtt-lens-test
       HUnit
     , base >=4.7 && <5
     , lens
-    , net-mqtt >=0.7.0.0 && <0.8.0.0
+    , net-mqtt >=0.7.0.0 && <0.9.0.0
     , net-mqtt-lens
     , tasty
     , tasty-hunit
