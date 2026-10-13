@@ -1,2 +1,5 @@
 *~
-.stack-work/
+/dist-newstyle/
+/.direnv/
+flake-profile*
+cabal.project.freeze
